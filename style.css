@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bebas+Neue&family=Bitter&family=Black+Ops+One&family=Bruno+Ace&family=Dancing+Script&family=Quicksand&family=Single+Day&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #585555;
+    color: #B6C4B6;
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-image: url(./assets/caixa_preta.jpg);
+    max-width: 1366px;
+    margin: 0;
+    padding: 1.5rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.imagens__header{
+    max-width: 100%;
+}
+
+.imagens__header > img {
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.destaque__titulo{
+    color: #16FF00;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 1366px;
+    height: 50vh;
+    justify-content: space-between;
+    gap: 20px;
+    
+}
+
+.entrada__dados{
+    width: 100%;
+    background-image: url(./assets/back_principal.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.desenvolvedor{
+    display: flex;
+    font-size:30px;
+    color: #16FF00;
+}
+
+.caixa__entrada{
+    width: 50%;
+    height: 40%;
+    background-color: #000000;
+    border-radius: 15px;
+    border: 6px solid #f6f6f6;
+    font-family: 'Quicksand', sans-serif;
+    color: #16FF00;
+    font-size: 30px;
+
+}
+
+.botoes__superior{
+    width: 50%;
+    padding: 21.5px 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.layout__botoes__superior{
+    padding: 20px 70px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    background: #000000;
+    color: #16FF00;
+    border: 6px solid #f6f6f6;
+}
+
+.layout__botoes__superior:hover{
+    background-color: darkgreen;
+}
+
+.atencao{
+    display: flex;
+    justify-content: center;
+    background: #000000;
+}
+
+.atencao__resultado{
+    display: flex;
+    justify-content: center;
+    background: #000000;
+}
+
+.atencao__desenvolvedor{
+    display: flex;
+    justify-content: center;
+    background: #000000;
+}
+
+.paragrafo__atencao{
+    font-family: 'Quicksand', sans-serif;
+    color: #16FF00;
+    font-size: 28px;
+}
+
+.saida__dados{
+    width: 100%;
+    background-image: url(./assets/back_principal.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.caixa__saida{
+    width: 50%;
+    height: 40%;
+    background-color: #000000;
+    border-radius: 15px;
+    border: 6px solid #f6f6f6;
+    font-family: 'Quicksand', sans-serif;
+    color: #16FF00;
+    font-size: 30px;
+}
+
+.botoes__inferior{
+    width: 50%;
+    padding: 21.5px 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.layout__botoes__inferior{
+    padding: 20px 70px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    background: #000000;
+    color: #16FF00;
+    border: 6px solid #f6f6f6;
+}
+
+.layout__botoes__inferior:hover{
+    background-color: darkgreen;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.link__links{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #16FF00;
+}
+
+@media (max-width: 770px) {
+    *{
+        margin: auto;
+        padding: auto;
+    }
+    
+    main{
+        height: 100%;
+    }
+
+    header{
+        background-image:url(./assets/mini__header.jpg);
+    }
+
+    .titulo{
+        color: white;
+    }
+
+    .atencao{
+        margin: 0;
+    }
+
+    .entrada__dados{
+        background-image: url(./assets/caixa_preta.jpg);
+    }
+
+    .caixa__entrada{
+        background-color: transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        color: #16FF00;
+    }
+
+    .saida__dados{
+        background-image: url(./assets/caixa_preta.jpg);
+    }
+
+    .caixa__saida{
+        background-color: transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        color: #16FF00;
+    }
+
+    .atencao__resultado{
+        margin: 0;
+    }
+
+    .links{
+        flex-direction: column;
+    }
+}

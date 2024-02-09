@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>DecoTexto</title>
+</head>
+<body>
+    
+    <header>
+        
+        <h1 class="titulo">Bem vindo ao <strong class="destaque__titulo">Decodificador de Texto</strong></h1>
+        
+    </header>
+    
+    <main>
+        <section class="atencao">
+            <p class="paragrafo__atencao">Atenção! Utilize apenas letras Minúsculas e sem Acentos !!!</p>
+        </section>
+        
+        <section class="entrada__dados">
+            <textarea class="caixa__entrada" name="entrada__texto" id="entrada__texto" cols="30" rows="10"></textarea>
+            <div class="botoes__superior">
+                <button class="layout__botoes__superior" onclick="if(validandoTexto())criptografarTexto()" id="criptografar">Criptografar</button>
+                <button class="layout__botoes__superior" onclick="if(validandoTexto())descriptografarTexto()" id="descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        
+        <section class="atencao__resultado">
+            <p class="paragrafo__atencao">Seu Resultado aparecerá AQUI...</p>
+        </section>
+
+         <section class="saida__dados">
+            <textarea class="caixa__saida" name="resultado" id="resultado" cols="30" rows="10"></textarea>
+            <div class="botoes__inferior">
+                <button class="layout__botoes__inferior" onclick="copiarTexto()" id="copiar">Copiar texto</button>
+                <button class="layout__botoes__inferior" onclick="limparTexto()" id="limpar">Limpar tudo</button>
+            </div>
+         </section>
+
+         <section class="atencao__desenvolvedor">
+            <p class="paragrafo__atencao"><p class="desenvolvedor">Desenvolvido por Henrique</p>
+        </section>
+
+         <section class="links">
+            <a class="link__links" href="https://github.com/henriquemgoncalves">GitHub</a>
+            <a class="link__links" href="https://www.linkedin.com/in/henrique-madruga-gonçalves-044a072aa">LinkedIn</a>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
